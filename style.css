@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    width: auto;
+    height: 300px;
+}
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10p;
+    gap: 30px;
+}
+li a{
+    font-weight: lighter;
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: #F27F33;
+    transition: 0.5s;
+}
+h1{
+    position: absolute;
+    width: 100%;
+    top: 75%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    color: white;
+    box-shadow: 0px 60px 10px 10px #927e5a;
+    line-height: 30px;
+}
+.top{
+    width: auto;
+    height: 500px;
+    line-height: 50px;
+    background-color: #8E7B57;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+} 
+.img{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 100%;
+    border: none;
+}
+.mid{
+    width: auto;
+    height: 400px;
+    background-color: #746547;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+h2{
+    font-size: 39px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+h3{
+    color: #F27F33;
+}
+.bot{
+    width: auto;
+    height: 530px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+}
+.h2{
+    color: #F27F33;
+    margin-top: 80px;
+}
+.bloco{
+    width: 240px;
+    height: 350px;
+    padding: 25px;
+    border-radius: 30px;
+    line-height: 30px;
+    transition: all 0.5s;
+}
+.bloco:hover {
+    background: white;
+    background: linear-gradient(90deg, #ececec 0%, #ececec 100%);
+}
+   
+.consulta{
+    width: auto;
+    height: 500px;
+    background-color: #F47F34;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.h21{
+    font-size: 30px;
+}
+.tipo{
+    display: flex;
+    gap: 60px;
+    flex-wrap:wrap-reverse;
+}
+.error-hidden {
+    display: none;
+
+  }
+.error-hidden, p{
+    font-size: 10px;
+    color: red;
+}
+.mapa, .mapas{ 
+    width: 100%;
+    height: 360px;
+    border: none;
+}
+footer{
+    width: auto;
+    height: 200px;
+    background-color: #746447;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.inferior{
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    align-items: center;
+}
+.final{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.bt1{
+    background-color: #8E7B57;
+    border: 2px white solid;
+    width: 200px;
+    height: 45px;
+    border-radius: 30px;
+    color: white;
+    transition: all 0.5s;
+}
+.bt1 a{
+    text-decoration: none;
+    color: white;
+}
+.bt1:hover {
+    background: white;
+    background: linear-gradient(90deg, #F27F33 0%, #F27F33 100%);
+    border: none;
+}
+.bt{
+    background-color: #746547;
+}
+
+p{
+    color: white;
+}
+.p1{
+    color: #8D7A57;
+}
+.bt2{
+    background-color: white;
+    color: #F27F33;
+}
+.bt2:hover {
+    background: white;
+    background: linear-gradient(90deg, #F27F33 0%, #F27F33 100%);
+    border: 2px solid white;
+    color:white;
+    transition: all 0.5s;
+}
+   
+.bt2:active {
+    transform: translate(0em, 0.2em);
+}
+input{
+    padding: 5px 15px 5px 15px;
+}
+.input{
+    border: 2px white solid;
+    border-radius: 30px;
+    height: 50px;
+    width: 220px;
+    color: white;
+    background-color: #F27F33;
+    transition: all 0.5s;
+    outline: none;
+}
+.input1{
+    border: 2px white solid;
+    border-radius: 30px;
+    height: 50px;
+    width: 500px;
+    color: white;
+    background-color: #F27F33;
+    transition: all 0.5s;
+    outline: none;
+}
+input::placeholder{
+    color: white;
+}
+input:focus{
+    color: white;
+    border: 2px solid white;
+    border-radius: 0px 30px 30px 30px;
+}
+.imt{
+    width: 60px;
+    height: 60px;
+}
+
